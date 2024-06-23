@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Minimal by Steve Smith</title>
-
+    <title>DAM</title>
+    <link rel="icon" href="static/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <meta name="viewport" content="width=device-width">
@@ -15,46 +15,59 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Minimal</h1>
-        <p>A Theme for GitHub Pages</p>
-        <p class="view"><a href="http://github.com/orderedlist/minimal">View the Project on GitHub <small>orderedlist/minimal</small></a></p>
-        <ul>
-          <li><a href="https://github.com/orderedlist/minimal/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/orderedlist/minimal/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="http://github.com/orderedlist/minimal">Fork On <strong>GitHub</strong></a></li>
-        </ul>
+        <h1>Drum Accompinemt Model Supplementary Material</h1>
+        <h3>By Arash Sadeghi Amjadi, Andrew Vardy, Andrew Staniland.</h3>
+        <h3>Memorial University of Newfoundland, NL, CA.</h3>
+
       </header>
       <section>
-        <h1>Drum Accompinemt Model Supplementary Material</h1>
+
 
         <p>This webpage includes supplementary material for the thesis <b>"Towards Human-Quality Music Accompaniment using Deep Generative Models and Transformers"</b>.</p>
 
         <h2>Audio Samples</h2>
 
-        <h3>Offline improvisation of model with human bass player </h3>  
-        <audio controls>
-          <source src="static/midi/ASoffline.mp3" type="audio/mpeg">
-        </audio>
+          <h3>Improvisation Session</h3>
 
-        <h3>Realtime improvisation of model with human bass player </h3>  
-        <audio controls>
-          <source src="static/midi/ASoffline.mp3" type="audio/mpeg">
-        </audio>
+            <h4>Offline improvisation of model with human bass player </h4>  
+            <audio controls>
+              <source src="static/midi/ASoffline.mp3" type="audio/mpeg">
+            </audio>
 
-        <h2>Video Samples</h2>
+            <h4>Offline improvisation of model with human bass player with velocity assigning </h4>  
+            <audio controls>
+              <source src="static/midi/velocity_assigned_.mp3" type="audio/mpeg">
+            </audio>
 
-        <h3>Realtime improvisation of model with human bass player </h3>  
+            <h4>Realtime improvisation of model with human bass player </h4>  
+            <audio controls>
+              <source src="static/midi/ASrealtime_fixed.mp3" type="audio/mpeg">
+            </audio>
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/f2No-GWe9iE" 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-        </iframe>
+          <h3>Drum generated for dataset samples</h3>
+          
+            <h4>Drum generated for a LPD dataset instance. Drum has no velocity information</h4>  
+            <audio controls>
+              <source src="static/midi/LPD sample without vel.mp3" type="audio/mpeg">
+            </audio>
+
+            <h4>same track with velocity information, assigned by VA</h4>  
+            <audio controls>
+              <source src="static/midi/LPD_DB_with_vel.mp3" type="audio/mpeg">
+            </audio>
+
+            <h2>Video Samples</h2>
+  
+            <h3>Improvisation Session</h3>
+
+            <h4>Realtime improvisation of model with human bass player </h4>  
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/f2No-GWe9iE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
       </section>
       <footer>
-        <p>This project is maintained by <a href="http://github.com/orderedlist">Steve Smith</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        HTML theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
