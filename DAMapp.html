@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DAM Desktop App</title>
+    <link rel="icon" href="static/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>DAM Desktop App</h1>
+        <h3><a href="https://github.com/arash-sadeghi/Drum-Accompaniment-Model">DAM Desktop App on GitHub</a></h3>
+        <h3><a href="https://drive.google.com/file/d/1AQszhLmKzKgCy_nevAyimEBeT1MsxJP2/view?usp=sharing">Download DAM Desktop App</a></h3>
+      </header>
+      <section>
+        <div>
+          <h3>Compatibility</h3>
+          <p>This application is primarily targeted for macOS and is recommended for use on Mac devices.</p>
+
+          <h3>Desktop App Guide</h3>
+
+          <h4>Starting</h4>
+          <p>
+            Download the application from the link provided on this page (<a href="https://drive.google.com/file/d/1AQszhLmKzKgCy_nevAyimEBeT1MsxJP2/view?usp=sharing">link</a>).
+            Unzip the downloaded file, navigate to the extracted folder, and double-click on the DAM application.
+            A terminal will open and, after a few seconds, will display <code>Running on http://127.0.0.1:5000</code>.
+            Once you see this message, open your preferred browser (Firefox and Chrome are recommended) and enter <code>http://127.0.0.1:5000</code> in the address bar to access the DAM app.
+          </p>
+          
+          <h4>Using</h4>
+          <p>This app can be used in two modes: offline and real-time.</p>
+
+          <h5>Offline Mode</h5>
+          <p>
+            In offline mode, you upload a MIDI file containing the bass track you want to accompany with drums.
+            You can choose whether the generated drum track should include velocity information, which makes the drum track sound more human-like.
+            Upon clicking the submit button, the DAM app will prompt you to save the generated drum track in MIDI format.
+            <br><br>
+            <img src="static/images/offline.png" alt="Offline Mode Screenshot" width="800">
+            <br><br>
+          </p>
+
+          <h5>Real-time Mode</h5>
+          <p>
+            Switch to the real-time tab to view the available MIDI ports on your machine.
+            The MIDI in port listens for incoming MIDI notes of your bass track, while the MIDI out port outputs the generated drum MIDI notes.
+            Note that the app generates only MIDI notes and does not produce audio. You can use applications like Logic Pro on Mac to receive and hear the drum MIDI notes.
+            Click the <code>Start</code> button to begin listening to the MIDI in port. After some time, the app will start generating drum notes.
+            To stop the app, click the <code>Stop</code> button and wait for the confirmation message indicating the app has stopped.
+            <br><br>
+            <img src="static/images/realtime.png" alt="Real-time Mode Screenshot" width="800">
+            <br><br>
+          </p>
+
+          <h4>Quitting</h4>
+          <p>To quit the app, close the terminal window that opened when you started the app. Simply closing the browser window will not terminate the application.</p>
+
+          <h3>Errors and Issues</h3>
+          <p>If you encounter any errors or issues, please report them on the GitHub page (<a href="https://github.com/arash-sadeghi/Drum-Accompaniment-Model">link</a>) in the Issues section.</p>
+        </div>
+
+        <!-- Link back to the main page -->
+        <p><a href="index.html">Back to Main Page</a></p>
+      </section>
+      <footer>
+        HTML theme by <a href="https://github.com/orderedlist">orderedlist</a>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+  </body>
+</html>
